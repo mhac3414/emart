@@ -1,10 +1,8 @@
 export default function page() {
-    const responseGoogle = (response) => {
-        console.log(response);
-    }
-    return (
-        <>
-hi
-        </>
-    )
+  return (
+    <>
+      <h1>Hi</h1>
+      <a href="/admin">ADMIN</a>
+    </>
+  );
 }
