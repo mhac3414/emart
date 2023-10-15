@@ -35,8 +35,6 @@ connectDB();
 
 // set up routes
 app.use("/api/auth", require("./routers/admin.router"));
-// app.use("/api/post", require("./routers/post.router"));
-// app.use("/api/author", require("./routers/author.router"));
 app.use("/api/tag", require("./routers/tag.router"));
 app.use("/api/product", require("./routers/product.router"));
 app.use("/api/manufacturer", require("./routers/manufacturer.router"));
