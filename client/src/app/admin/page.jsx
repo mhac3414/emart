@@ -32,7 +32,7 @@ export default function Page() {
           setToastType(res.data.messageType);
           setToastMessage(res.data.message);
           localStorage.setItem("authToken", res.data.token);
-          // router.push("/admin/dashboard");
+          router.push("/admin/dashboard");
         }
       })
       .catch((err) => {

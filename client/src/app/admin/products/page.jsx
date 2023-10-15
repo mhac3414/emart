@@ -150,7 +150,7 @@ export default function Page() {
         } else {
           setToastType(res.data.messageType);
           setToastMessage(res.data.message);
-          // window.location.reload();
+          window.location.reload();
         }
       });
     } catch (error) {
@@ -280,7 +280,7 @@ export default function Page() {
                     required
                   />
                 </div>
-                {previews &&
+                {/* {previews &&
                   previews.map((currentPreview, index) => (
                     <div className="mb-6" key={index}>
                       <div
@@ -343,7 +343,7 @@ export default function Page() {
                       multiple
                     />
                   </label>
-                </div>
+                </div> */}
                 <div className="mb-6">
                   <ManufacturerSearchInput
                     selectedManufacturer={selectedManufacturer}
@@ -376,7 +376,7 @@ export default function Page() {
               </form>
             </div>
           ) : null}
-          <div className="w-full md:max-w-[50%] max-w-[75%] bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 mx-auto p-4 max-h-screen overflow-y-scroll">
+          <div className="w-full md:max-w-[50%] max-w-[75%] bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 mx-auto p-4 max-h-[80vh] overflow-y-auto">
             <div className="flex items-center justify-between mb-4">
               <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">
                 All Products
@@ -393,7 +393,7 @@ export default function Page() {
                       <div className="flex items-center space-x-4">
                         <div className="flex-shrink-0">
                           <img
-                            className="w-[64px] h-[36px] md:w-[128px] md:h-[72px] rounded-lg"
+                            className="aspect-square w-[36px] h-[36px] md:w-[72px] md:h-[72px] rounded-lg"
                             src={product.images[0]}
                             alt="Neil image"
                           />
